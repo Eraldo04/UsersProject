@@ -1,0 +1,105 @@
+<div class="imageContainer">
+  <h1 class="textContainer">Here are All the users that are registered to this website!</h1>
+  <h2 class="text-white">If you are interested to be part of this website</h2>
+  <h3 class="text-white">You just need to Be a user by completing the form Below.</h3>
+</div>
+<div class="container my-5  shadow p-3  bg-body-tertiary rounded w-xs-100 w-sm-50">
+    <div class="row">
+        <form #usersForm="ngForm" (ngSubmit)="onUserCreate(usersForm.value)">
+
+          <h1 class="text-center mb-4 text-secondary">Add a user now 
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg>
+        </h1>
+              <!--Grid row-->
+
+                  <!--Grid column-->
+
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">text</span>
+                    </div>
+                    <input type="text" name="name" class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1" ngModel>
+                  </div>
+
+                  <!--Grid column-->
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">+355</span>
+                    <input name="phone" type="tel" class="form-control" maxlength="8" min="5" placeholder="Phone number minimum 5 digits" aria-label="Phone" aria-describedby="basic-addon1" ngModel>
+                  </div>
+
+                  <!--Grid column-->
+                  
+                  <div class="input-group mb-3">
+                    <input type="email" name="email" class="form-control" placeholder="Recipient's email" aria-label="Recipient's email" aria-describedby="basic-addon2" ngModel>
+                    <div class="input-group-append">
+                      <span class="input-group-text" id="basic-addon2">@example.com</span>
+                    </div>
+                  </div>
+
+                   <!--Grid column-->
+
+                   <div class="input-group mb-3">
+                    <input type="text" name="street" class="form-control" placeholder="street" aria-label="street" aria-describedby="basic-addon1" ngModel>
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">address</span>
+                    </div>
+                  </div>
+
+                   <!--Grid column-->
+
+                   <div class="input-group mb-3">
+                     <div class="input-group-prepend">
+                       <span class="input-group-text" id="basic-addon1">City</span>
+                     </div>
+                    <input type="text" name="city" class="form-control" placeholder="City" aria-label="Address" aria-describedby="basic-addon1" ngModel>
+                  </div>
+
+                  <!--Grid column-->
+                  
+                  <div class="input-group mb-3">
+                    <input type="file" name="imgId" class="form-control" id="inputGroupFile02" ngModel>
+                    <label class="input-group-text" for="inputGroupFile02">Upload</label>
+                  </div>
+
+
+              <!--Grid row-->
+
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Title</span>
+                  </div>
+                  <input type="text" name="title" class="form-control" placeholder="Subject" aria-label="Subject" aria-describedby="basic-addon1" ngModel>
+                </div>
+
+
+               <!--Grid column-->
+
+               <div class="input-group mb-3">
+                <input type="text" name="suite" class="form-control" placeholder="Suite" aria-label="Suite" aria-describedby="basic-addon1" ngModel>
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">address</span>
+                </div>
+              </div>
+
+
+                  <!--Grid column-->
+
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">With textarea</span>
+                    </div>
+                    <input  maxlength="80" min="10" name="description" class="form-control" aria-label="With textarea" ngModel>
+                  </div>
+              <!--Grid row-->
+              
+              <div class="modal-footer mt-5">
+                <button type="submit" class="btn btn-primary">Add User</button>
+            </div>
+          </form>
+
+    </div>
+</div>

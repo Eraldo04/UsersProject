@@ -1,0 +1,182 @@
+<!-- Pills navs -->
+<div class="main" data-aos="fade-up">
+
+    <div class="container border rounded bg-light  text-center w-xs-100 w-sm-25 col-sm-8 align-items-center my-5 shadow-lg p-3 mb-5  rounded">
+        <div class="row mx-auto my-5">
+        <div class="col">
+            
+            <ul class="nav nav-pills nav-justified mb-3" id="ex1" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link  w-50 mx-auto" id="tab-login" data-mdb-toggle="pill" routerLink="/login" role="tab"
+                    aria-controls="pills-login" aria-selected="false">Login</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active w-50 mx-auto" id="tab-register" data-mdb-toggle="pill" routerLink="/register" role="tab"
+                    aria-controls="pills-register" aria-selected="true">Register</a>
+                </li>
+            </ul>
+    <!-- Pills navs -->
+    
+    <!-- Pills content -->
+    <div class="tab-content">
+        <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login">
+            <form>
+                <div class="text-center mb-3">
+                    <p>Sign up with:</p>
+                    <button type="button" class="btn  btn-floating mx-1 rounded-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                          </svg>
+                    </button>
+                    
+                    <button type="button" class="btn  btn-floating mx-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                            <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                          </svg>
+                    </button>
+                    
+                    <button type="button" class="btn btn-floating mx-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                          </svg>
+                    </button>
+            </div>
+
+            <p class="text-center">or:</p>
+
+
+            
+            <!-- Firstname input -->
+            <div class="form-outline mb-4">
+                <input type="text" id="loginName" class="form-control w-50 mx-auto my-2" />
+                <label class="form-label" for="loginName">Firstname:</label>
+            </div>
+
+            <!-- Lastname input -->
+            <div class="form-outline mb-4">
+                <input type="text" id="loginName" class="form-control w-50 mx-auto my-2" />
+                <label class="form-label" for="loginName">Lastname:</label>
+            </div>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+                <input type="email" id="loginName" class="form-control w-50 mx-auto my-2" />
+                <label class="form-label" for="loginEmail">Email:</label>
+            </div>
+            
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+                <input type="password" id="loginPassword" class="form-control w-50 mx-auto my-2" />
+                <label class="form-label" for="loginPassword">Password:</label>
+        </div>
+        
+        <!-- 2 column grid layout -->
+        <div class="row mb-4">
+            <div class="col-md-6 d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check mb-3 mb-md-0">
+                    <input class="form-check-input" type="checkbox" value="" id="loginCheck" checked />
+                    <label class="form-check-label" for="loginCheck"> Remember me </label>
+                </div>
+            </div>
+            
+            <div class="col-md-6 d-flex justify-content-center">
+                <!-- Simple link -->
+                <a routerLink="/register" class="text-decoration-none text-secondary">Forgot password <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-frown" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+                  </svg> ?
+                </a>
+            </div>
+        </div>
+        
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4 w-50 mx-auto">Sign Up
+             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0v-2z"/>
+            <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+          </svg>
+        </button>
+        
+        <!-- Register buttons -->
+        <div class="text-center">
+            <p>Alredy a member? <a routerLink="/login" class="text-decoration-none text-secondary fw-bold">Login 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-door-open-fill" viewBox="0 0 16 16">
+                    <path d="M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2h.5a.5.5 0 0 1 .5.5V15h-1V2zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z"/>
+                  </svg>
+            </a>
+        </p>
+        </div>
+    </form>
+</div>
+<div class="tab-pane fade" id="pills-register" role="tabpanel" aria-labelledby="tab-register">
+    <form>
+        <div class="text-center mb-3">
+            <p>Sign up with:</p>
+            <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-facebook-f"></i>
+            </button>
+            
+            <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-google"></i>
+            </button>
+            
+            <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-twitter"></i>
+            </button>
+            
+            <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-github"></i>
+            </button>
+        </div>
+        
+        <p class="text-center">or:</p>
+        
+        <!-- Name input -->
+        <div class="form-outline mb-4">
+            <input type="text" id="registerName" class="form-control" />
+            <label class="form-label" for="registerName">Name</label>
+        </div>
+        
+        <!-- Username input -->
+        <div class="form-outline mb-4">
+            <input type="text" id="registerUsername" class="form-control" />
+            <label class="form-label" for="registerUsername">Username</label>
+        </div>
+        
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+            <input type="email" id="registerEmail" class="form-control" />
+            <label class="form-label" for="registerEmail">Email</label>
+        </div>
+        
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+            <input type="password" id="registerPassword" class="form-control" />
+            <label class="form-label" for="registerPassword">Password</label>
+        </div>
+        
+        <!-- Repeat Password input -->
+        <div class="form-outline mb-4">
+            <input type="password" id="registerRepeatPassword" class="form-control" />
+            <label class="form-label" for="registerRepeatPassword">Repeat password</label>
+        </div>
+        
+        <!-- Checkbox -->
+        <div class="form-check d-flex justify-content-center mb-4">
+            <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
+            aria-describedby="registerCheckHelpText" />
+            <label class="form-check-label" for="registerCheck">
+                I have read and agree to the terms
+            </label>
+        </div>
+        
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-3">Sign in</button>
+    </form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+  <!-- Pills content -->

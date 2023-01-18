@@ -1,0 +1,28 @@
+    <div id="page">
+      <div class="imageContainer" >
+        <h1 class="textContainer" data-aos="fade-up">Here are All the users that are registered to this website!</h1>
+        <h2 class="text-white"data-aos="fade-up">If you are interested to be part of this website</h2>
+        <h3 class="text-white"data-aos="fade-up">You just need to click the Add User Button at your top right corner.</h3>
+      </div>
+
+      <div class="container d-flex" *ngFor="let users of listUsers">
+            <div class="row flex-lg-row-reverse mx-auto align-items-center g-5 py-5" data-aos="fade-up">
+              <div class="col col-sm-8 col-lg-6">
+                <img src="/assets/images/{{ users.imgId }}" class="d-block mx-lg-auto img-fluid rounded" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+              </div>
+              <div class="col-lg-6 text-center">
+                <h1 class="display-5 fw-bold lh-1 mb-3">{{ users.title }}</h1>
+                <p class="lead">{{ users.description }}</p>
+                <div class="d-flex justify-content-between">
+                  <p class="fw-bold"><i>{{ users.name }} </i></p>
+                  <span class="text-muted">Online {{ users.address.minutes }} MINUTES AGO.</span>
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-between">
+                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2" routerLink="/details/{{ users.id }}" (click)="onDetailsShow(users.id)">Details</button>
+                  <a href="mailto:{{ users.email }}" type="button" class="btn btn-info btn-lg px-4">{{ users.email }}</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
