@@ -209,6 +209,18 @@
         "catchPhrase": "Centralized empowering task-force",
         "bs": "target end-to-end models"
       }
+    },
+    {
+      "name": "Eraldo",
+      "phone": "68564038",
+      "email": "eraldo.kanani@dunegroup.it",
+      "street": "Rr. Rrapo Hekali",
+      "city": "Tirana",
+      "imgId": "image3.jpg",
+      "title": "Eraldo Kanani the Programmer",
+      "suite": "Suite 879",
+      "description": "This is the best suite you can find at that place  i live for now and i will.",
+      "id": 11
     }
   ]
 }

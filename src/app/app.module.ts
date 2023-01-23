@@ -1,3 +1,4 @@
+import { AuthComponent } from './auth/auth.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -17,7 +18,7 @@ const appRoute: Routes = [
   { path: 'users', component: UsersComponent, },
   { path: 'details/:id', component: DetailsComponent},
   { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent }
+  { path: 'auth', component: AuthComponent }
 ];
 
 
@@ -28,7 +29,8 @@ const appRoute: Routes = [
     DetailsComponent,
     LoginComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
