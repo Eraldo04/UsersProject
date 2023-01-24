@@ -11,7 +11,7 @@ import { NgForm } from '@angular/forms';
 export class AuthComponent {
 isLoginMode: boolean = false;
 isLoading: boolean = false;
-
+error: string | undefined;
 
 constructor(private authService: AuthService) {}
 
@@ -36,7 +36,12 @@ onSubmit(form: NgForm){
         console.log(data);
         this.isLoading = false;
         }, err => {
+        this.error = 'An error occurred';
         console.log(err);
+        switch(err.error.error.message) {
+            case 'EMAIL_EXISTS':
+                this.error = 'Email already exists';
+        }
         this.isLoading = false;
             });
 
