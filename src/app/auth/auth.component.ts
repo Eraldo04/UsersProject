@@ -1,6 +1,8 @@
-import { AuthService } from './auth.service';
+import { Observable } from 'rxjs';
+import { AuthService, AuthResponseData } from './auth.service';
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-auth',
@@ -10,10 +12,9 @@ import { NgForm } from '@angular/forms';
 
 export class AuthComponent {
 isLoginMode: boolean = false;
-isLoading: boolean = false;
 error: string | undefined;
 
-constructor(private authService: AuthService) {}
+constructor(private authService: AuthService, private router: Router) {}
 
 
 onSwitchMode() {
@@ -26,26 +27,34 @@ onSubmit(form: NgForm){
     } 
     const email = form.value.email;
     const password = form.value.password;
+    let authObs: Observable<AuthResponseData>; 
 
-    this.isLoading = true;
 
     if(this.isLoginMode) {
+      authObs = this.authService.login(email, password);
+}
+else {
+       authObs = this.authService.signup(email, password);
+    }
 
-    } else {
-        this.authService.signup(email, password).subscribe(data => {
+    authObs.subscribe(data => {
         console.log(data);
-        this.isLoading = false;
-        }, err => {
+        this.router.navigate(['/home']);
+    }, 
+    err => {
         this.error = 'An error occurred';
         console.log(err);
         switch(err.error.error.message) {
             case 'EMAIL_EXISTS':
                 this.error = 'Email already exists';
+                break;  
+                case 'INVALID_PASSWORD':
+                    this.error = 'Password Incorrect';  
+                    break;  
         }
-        this.isLoading = false;
-            });
+}
+    );
 
-    }
     form.reset();
 }
 
