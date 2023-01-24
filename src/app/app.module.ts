@@ -1,4 +1,3 @@
-import { loadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
 import { AuthComponent } from './auth/auth.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -15,11 +14,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './register/register.component'; 
 
 const appRoute: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: AuthComponent },
+  { path: 'home', component: HomeComponent },
   { path: 'users', component: UsersComponent, },
   { path: 'details/:id', component: DetailsComponent},
   { path: 'login', component: LoginComponent },
-  { path: 'auth', component: AuthComponent }
 ];
 
 
@@ -32,7 +31,6 @@ const appRoute: Routes = [
     HomeComponent,
     RegisterComponent,
     AuthComponent,
-    loadingSpinnerComponent
   ],
   imports: [
     BrowserModule,
