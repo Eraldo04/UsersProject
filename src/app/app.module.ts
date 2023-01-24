@@ -1,3 +1,4 @@
+import { loadingSpinnerComponent } from './shared/loading-spinner/loading-spinner.component';
 import { AuthComponent } from './auth/auth.component';
 import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -30,7 +31,8 @@ const appRoute: Routes = [
     LoginComponent,
     HomeComponent,
     RegisterComponent,
-    AuthComponent
+    AuthComponent,
+    loadingSpinnerComponent
   ],
   imports: [
     BrowserModule,
