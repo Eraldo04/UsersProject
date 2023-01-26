@@ -1,6 +1,6 @@
 import { Observable } from 'rxjs';
 import { AuthService, AuthResponseData } from './auth.service';
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -12,7 +12,7 @@ import { Router } from '@angular/router';
 
 export class AuthComponent {
 isLoginMode: boolean = false;
-error: string | undefined;
+@Output() error: string | undefined;
 
 constructor(private authService: AuthService, private router: Router) {}
 
@@ -51,6 +51,9 @@ else {
                 case 'INVALID_PASSWORD':
                     this.error = 'Password Incorrect';  
                     break;  
+                    case 'EMAIL_NOT_FOUND':
+                        this.error = 'Email not Registered';  
+                        break;
         }
 }
     );
